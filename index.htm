@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            body {
+            display:flex; flex-direction:column; justify-content:center;
+            min-height:100vh;
+            max-width: 500px;
+            margin: auto;
+            }
+
+            .zoom_img img, .zoom_img3 img, .zoom_img4 img, .img4, .img4:hover, .resize, .resize:hover{
+            -moz-transition:-moz-transform 0.1s ease-in; 
+            -webkit-transition:-webkit-transform 0.1s ease-in; 
+            -o-transition:-o-transform 0.1s ease-in;
+            transition:transform 0.1 ease-in;
+            }
+
+
+            .zoom_img4 img:hover, .img4:hover{
+            -moz-transform:scale(4); 
+            -webkit-transform:scale(4);
+            -o-transform:scale(4);
+            transform:scale(4);
+            }
+
+
+            .img3d:hover{
+            -moz-transform:scale3d(1, 1, 1);
+            -webkit-transform:scale3d(1, 1, 1);
+            -o-transform:scale3d(1, 1, 1);
+            transform:scale3d(1, 1, 1);
+            }
+
+            .resize:hover {
+            width: 187.5;
+            height: auto;
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        Inside a div <br>
+        <div class="zoom_img4">
+            
+            <img src="Box_BaseGame1_C1_HiG.png" height="62.5px" width="46.875px">
+        </div>
+
+        Outside a div
+
+        <img class="img4" src="Box_BaseGame1_C1_HiG.png"  height="62.5px" width="46.875px">
+
+        Just change size
+
+        <img class="resize" src="Box_BaseGame1_C1_HiG.png"  height="62.5px" width="46.875px">
+
+
+
+    </body>
+</html>
